@@ -92,6 +92,7 @@ p {
     width: 100px;
     margin-top: 10px;
     background-color: transparent;
+    border-radius:15px;
 }
 
 .foot a {
