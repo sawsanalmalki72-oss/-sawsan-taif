@@ -71,6 +71,8 @@ p {
 .hero-image {
     width: 400px;
     border-radius: 15px;
+    border-color:#BAD6EB;
+    border-style: solid;
 }
 
 .footer-logo {
