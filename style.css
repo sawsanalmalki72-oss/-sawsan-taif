@@ -130,3 +130,27 @@ p {
 html {
     scroll-behavior: smooth;
 }
+
+.hamburger {
+    display: none;
+    cursor: pointer; 
+    color: white;
+    padding: 10px;
+    font-size: 20px; 
+    
+}
+    
+@media screen and (max-width: 800px) {
+    .hamburger {
+        display: block;
+        text-align: ;
+        background: #000;
+        }
+    .menu ul {
+        display: none;
+        flex-direction: column;
+        }
+    .menu ul.show { 
+        display: flex;
+        }
+}
