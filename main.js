@@ -23,6 +23,6 @@ document.getElementById('hamBtn').onclick = function() {
 document.querySelectorAll('img').forEach(img => {
   img.onclick = function() {
     this.style.border = "5px solid #BAD6EB";
-    alert("كراً لزيارتك لصور الطائف!"); 
+    alert("استمتع برحلتك في الطائف!"); 
   };
 });
