@@ -16,7 +16,7 @@ document.write(greeting);
 
 document.querySelector('.menu').insertAdjacentHTML('afterbegin', '<div class="hamburger" id="hamBtn">☰ </div>');
 document.getElementById('hamBtn').onclick = function() {
-  document.querySelector('.menu ul').classList.toggle('show');
+document.querySelector('.menu ul').classList.toggle('show');
 };
 
 
@@ -25,4 +25,19 @@ document.querySelectorAll('img').forEach(img => {
     this.style.border = "5px solid #BAD6EB";
     alert("استمتع برحلتك في الطائف!"); 
   };
+});
+const toggleBtn = document.getElementById('theme-toggle');
+const themeIcon = document.getElementById('theme-icon');
+
+toggleBtn.addEventListener('click', () => {
+  
+  const currentTheme = document.documentElement.getAttribute('data-theme');
+  
+  if (currentTheme === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'light');
+    themeIcon.textContent = '🌙'; 
+  } else {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    themeIcon.textContent = '☀️';
+  }
 });
